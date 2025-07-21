@@ -1,21 +1,18 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        int n = nums.length;
-        for (int i = 0; i < n; i++) {
+        for(int i=0; i<nums.length; i++) {
             int digit = nums[i];
             int count = 0;
 
-            for (int j = 0; j < n; j++) {
-                if (nums[j] == digit) {
+            for(int j=0; j<nums.length; j++) {
+                if(nums[j]==digit) {
                     count++;
                 }
             }
-
-            if (count == 1) {
+            if(count==1) {
                 return digit;
             }
+            }
+            return -1;
         }
-
-        return -1;
     }
-}

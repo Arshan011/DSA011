@@ -2,7 +2,7 @@ class Solution {
     public int[] twoSum(int[] nums, int target) {
         
         int n = nums.length;
-        int[] ans = {-1};
+        int[] ans = {-1, -1};  // default if no answer found
 
         HashMap<Integer, Integer> mp = new HashMap<>();
         for(int i=0; i<n; i++) {
